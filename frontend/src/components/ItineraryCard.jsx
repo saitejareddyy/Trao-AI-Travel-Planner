@@ -58,7 +58,7 @@ export default function ItineraryCard({
 
     try {
       const token = localStorage.getItem('token');
-      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/trips/${trip._id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || 'https://trao-ai-travel-planner-backend-ft4i.onrender.com'}/api/trips/${trip._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ export default function ItineraryCard({
 
     try {
       const token = localStorage.getItem('token');
-      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/trips/${trip._id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || 'https://trao-ai-travel-planner-backend-ft4i.onrender.com'}/api/trips/${trip._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
